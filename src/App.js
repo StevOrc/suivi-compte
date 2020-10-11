@@ -7,11 +7,11 @@ import {
   AddTransaction,
   TransactionList,
 } from "../src/app/";
-import { GlobalContext } from '../src/context/GlobalState';
+import { GlobalProvider } from "../src/context/GlobalState";
 
 function App() {
   return (
-    <GlobalContext>
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
@@ -19,7 +19,7 @@ function App() {
         <TransactionList />
         <AddTransaction />
       </div>
-    </GlobalContext>
+    </GlobalProvider>
   );
 }
 
