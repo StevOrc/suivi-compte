@@ -9,6 +9,7 @@ const initialState = {
     { id: 3, text: "Betclic", amount: 248.64 },
     { id: 4, text: "Restaurant", amount: -27.8 },
     { id: 5, text: "Essence", amount: -68.87 },
+    { id: 6, text: "Salaire", amount: 3950 },
   ],
 };
 
