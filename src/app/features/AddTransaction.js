@@ -9,14 +9,13 @@ const AddTransaction = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     const newTransaction = {
-      id: Math.floor(Math.random() * 100000000),
       text,
       amount: +amount,
     };
 
     addTransaction(newTransaction);
-    setText('');
-    setAmount('');
+    setText("");
+    setAmount("");
   };
 
   return (
@@ -27,6 +26,7 @@ const AddTransaction = () => {
           <label htmlFor="text">Text</label>
           <input
             type="text"
+            name="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Enter text..."
@@ -39,6 +39,7 @@ const AddTransaction = () => {
           </label>
           <input
             type="number"
+            name="amount"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="Enter amount..."
